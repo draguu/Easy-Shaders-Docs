@@ -45,14 +45,14 @@
 <h2 id="basic-controls">Basic controls</h2>
 <p>Use <b>Scale</b> to change the texture scale. Below it are buttons for changing the base properties of the material.</p>
 <figure class="media"><video controls muted playsinline preload="metadata" src="videos/Basic-Controls.mp4#t=0.1" data-p="images/basic%20control.png" onerror="this.poster=this.dataset.p"></video><figcaption>Scale and base material controls <span class="files">videos/basic-controls.mp4</span></figcaption></figure>
-<h2 id="wear-and-tear">Wear and tear</h2>
+<h2 id="wear-and-tear">Wear and tear and global aging</h2>
 <p>Open <b>Wear and Mixtures</b> and press <b>Add Wear and Tear</b>. Easy Shaders bakes the maps it needs from your object and prepares it for detail effects. Baking takes a little time, then more options appear.</p>
-<figure class="media"><video controls muted playsinline preload="metadata" src="videos/Add-Wear-And-Tear.mp4#t=0.1" data-p="images/globle%20wear%20and%20tear.png" onerror="this.poster=this.dataset.p"></video><figcaption>Baking the maps for wear and tear <span class="files">videos/add-wear-and-tear.mp4</span></figcaption></figure>
+<figure class="media"><video controls muted playsinline preload="metadata" src="videos/Add-Wear-And-Tear.mp4#t=0.1" data-p="images/globle%20wear%20and%20tear.png" onerror="this.poster=this.dataset.p"></video><figcaption>Wear and tear and global aging <span class="files">videos/add-wear-and-tear.mp4</span></figcaption></figure>
 <h3>Scale and Global</h3>
 <dl class="props"><div><dt>Scale</dt><dd>Scale of the wear textures.</dd></div><div><dt>Global</dt><dd>Ages the whole object. Move the slider to add more wear.</dd></div></dl>
 <h3>Effects</h3>
 <p>Below those you have <b>Grunge, Scratch, Edge, Leaks, Dent, AO</b> and <b>CC</b>. Each has its own settings, available through the small arrow beside it.</p>
-<figure class="media"><video controls muted playsinline preload="metadata" src="videos/global-wear.mp4#t=0.1" data-p="images/globle%20wear%20and%20tear.png" onerror="this.poster=this.dataset.p"></video><figcaption>Using the Global slider and effect list <span class="files">videos/global-wear.mp4</span></figcaption></figure>
+
 <h3 id="randomise">Randomise or choose textures</h3>
 <p>Press <b>Randomise</b> to pick a new texture for each effect, or choose one yourself from the thumbnail dropdown at the far right of the slider. The dropdown is available for Grunge, Scratch, Edge and Leaks.</p>
 <figure class="media"><video controls muted playsinline preload="metadata" src="videos/randomise-textures.mp4#t=0.1" data-p="images/randomise-textures.png" onerror="this.poster=this.dataset.p"></video><figcaption>Randomising and choosing effect textures <span class="files">videos/randomise-textures.mp4</span></figcaption></figure>
@@ -63,7 +63,7 @@
 <h3 id="edge">Edge</h3>
 <dl class="props"><div><dt>Scale</dt><dd>Scale of the edge wear texture.</dd></div><div><dt>Color</dt><dd>The color of the edge wear.</dd></div><div><dt>Edge Fade</dt><dd>How much of the texture mixes in along the edges of the object.</dd></div><div><dt>Roughness</dt><dd>Roughness value of the edge mask.</dd></div><div><dt>Bump</dt><dd>Bump value of the edge mask.</dd></div></dl><figure class="media"><video controls muted playsinline preload="metadata" src="videos/Edge.mp4#t=0.1" data-p="images/Easy%20Shaders%20Edge%20Wear%20Showcase.png" onerror="this.poster=this.dataset.p"></video><figcaption>Edge settings <span class="files">videos/edge.mp4</span></figcaption></figure>
 <p>Below these is an <b>Edgewear</b> button. On objects where the edge wear map doesn’t generate well, use it to draw the edge wear by hand.</p>
-<figure class="media"><video controls muted playsinline preload="metadata" src="videos/draw-edgewear.mp4#t=0.1" data-p="images/draw-edgewear.png" onerror="this.poster=this.dataset.p"></video><figcaption>Drawing edge wear manually <span class="files">videos/draw-edgewear.mp4</span></figcaption></figure>
+
 <h3 id="leaks">Leaks</h3>
 <dl class="props"><div><dt>Scale</dt><dd>Scale of the leak textures.</dd></div><div><dt>Color</dt><dd>Color of the leaks.</dd></div><div><dt>Fade</dt><dd>How soft the leaks fade out.</dd></div><div><dt>Position</dt><dd>How far the leaks run from top to bottom.</dd></div></dl><figure class="media"><video controls muted playsinline preload="metadata" src="videos/Leaks.mp4#t=0.1" data-p="images/Easy%20Shaders_%20Leaks%20Control%20Guide.png" onerror="this.poster=this.dataset.p"></video><figcaption>Leaks settings <span class="files">videos/leaks.mp4</span></figcaption></figure>
 <h3 id="dent">Dent</h3>
@@ -80,7 +80,7 @@
 
 <h2 id="edge-ao-prep">Edge and AO preparation</h2>
 <p>Adjust the edge and AO map properties used to make the masks. Below the settings you can choose the <b>texture size</b> of the mask and the <b>samples</b> used for baking.</p>
-<figure class="media"><video controls muted playsinline preload="metadata" src="videos/Edge%20And%20Ao%20Preparation.mp4#t=0.1" data-p="images/edge-ao-preparation.png" onerror="this.poster=this.dataset.p"></video><figcaption>Edge and AO mask settings <span class="files">videos/Edge%20and%20AO%20preparation.mp4</span></figcaption></figure>
+<figure class="media"><video controls muted playsinline preload="metadata" src="videos/Edge%20And%20Ao%20Preparation.mp4#t=0.1" data-p="images/edge-ao-preparation.png" onerror="this.poster=this.dataset.p"></video><figcaption>Edge and AO settings, preview and rebake <span class="files">videos/Edge%20and%20AO%20preparation.mp4</span></figcaption></figure>
 <h3 id="preview">Preview and rebake</h3>
 <ol>
 <li>Click <b>Preview</b> to see the edge wear on your object.</li>
@@ -88,14 +88,14 @@
 <li>Press <b>Exit Preview</b> to return to your materials.</li>
 <li>Press <b>Rebake</b>. Your existing material is rebaked, reassigned and updated automatically.</li>
 </ol>
-<figure class="media"><video controls muted playsinline preload="metadata" src="videos/preview-and-rebake.mp4#t=0.1" data-p="images/preview-and-rebake.png" onerror="this.poster=this.dataset.p"></video><figcaption>Previewing edge wear and rebaking <span class="files">videos/preview-and-rebake.mp4</span></figcaption></figure>
+
 <h2 id="material-baking">Material baking</h2>
 <p>Set the <b>texture resolution</b> and <b>samples</b>, then choose how the UVs are made:</p>
-<dl class="props"><div><dt>Auto UV</dt><dd>Smart unwraps your object.</dd></div><div><dt>Manual UV</dt><dd>Lets you pick a UV map from the available list.</dd></div></dl><figure class="media"><video controls muted playsinline preload="metadata" src="videos/uv-options.mp4#t=0.1" data-p="images/uv-options.png" onerror="this.poster=this.dataset.p"></video><figcaption>Auto UV and Manual UV <span class="files">videos/uv-options.mp4</span></figcaption></figure>
+<dl class="props"><div><dt>Auto UV</dt><dd>Smart unwraps your object.</dd></div><div><dt>Manual UV</dt><dd>Lets you pick a UV map from the available list.</dd></div></dl>
 <p>Then choose what to bake:</p>
-<dl class="props"><div><dt>Bake Single Object</dt><dd>Bakes the selected material slot only.</dd></div><div><dt>Bake All in One</dt><dd>Bakes all available material slots into a single texture.</dd></div></dl><figure class="media"><video controls muted playsinline preload="metadata" src="videos/Bake-Single-And-All.mp4#t=0.1" data-p="images/material%20baking.png" onerror="this.poster=this.dataset.p"></video><figcaption>Single object and all-in-one baking <span class="files">videos/bake-single-and-all.mp4</span></figcaption></figure>
+<dl class="props"><div><dt>Bake Single Object</dt><dd>Bakes the selected material slot only.</dd></div><div><dt>Bake All in One</dt><dd>Bakes all available material slots into a single texture.</dd></div></dl><figure class="media"><video controls muted playsinline preload="metadata" src="videos/Bake-Single-And-All.mp4#t=0.1" data-p="images/material%20baking.png" onerror="this.poster=this.dataset.p"></video><figcaption>Material baking <span class="files">videos/bake-single-and-all.mp4</span></figcaption></figure>
 <p>Press <b>Bake</b> to start. When it finishes, you can switch quickly between the baked material and the original material.</p>
-<figure class="media"><video controls muted playsinline preload="metadata" src="videos/switch-baked-material.mp4#t=0.1" data-p="images/switch-baked-material.png" onerror="this.poster=this.dataset.p"></video><figcaption>Switching between baked and original material <span class="files">videos/switch-baked-material.mp4</span></figcaption></figure></article></main><main class="page" id="page-decals" hidden><article>
+</article></main><main class="page" id="page-decals" hidden><article>
 <h1>Decals</h1>
 <p class="lead">Place decals on your object, stack them as layers and adjust how they blend with the surface.</p>
 
@@ -117,6 +117,6 @@
 <dl class="props"><div><dt>Roughness</dt><dd>Roughness of the decal texture.</dd></div><div><dt>Metallic</dt><dd>Metallic value of the decal texture.</dd></div><div><dt>Bump</dt><dd>Bump of the decal outline.</dd></div><div><dt>Texture Bump</dt><dd>Detail bump from the decal texture.</dd></div><div><dt>Color Adjustment</dt><dd>Simple color correction for the decal texture.</dd></div><div><dt>Color 2</dt><dd>An overlaid color.</dd></div></dl><figure class="media"><video controls muted playsinline preload="metadata" src="videos/Decal-Properties.mp4#t=0.1" data-p="images/Decal%20Properties.png" onerror="this.poster=this.dataset.p"></video><figcaption>Decal property settings <span class="files">videos/decal-properties.mp4</span></figcaption></figure>
 <h3 id="texture-variation">Texture variation</h3>
 <p>Adds noise and a radial gradient around the decal so it blends into the surface.</p>
-<figure class="media"><video controls muted playsinline preload="metadata" src="videos/texture-variation.mp4#t=0.1" data-p="images/texture-variation.png" onerror="this.poster=this.dataset.p"></video><figcaption>Noise and radial gradient variation <span class="files">videos/texture-variation.mp4</span></figcaption></figure></article></main><aside class="toc" id="toc" aria-label="On this page"></aside></div>
+</article></main><aside class="toc" id="toc" aria-label="On this page"></aside></div>
 <footer>Easy Shaders documentation</footer>
 <script src="script.js"></script></body></html>
